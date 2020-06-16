@@ -32,6 +32,7 @@ createNav();
 function createCards() {
   let activeHousePeople = got.houses.find(house => house.name === activeHouse)
     .people;
+  // console.log(activeHousePeople);
   section.innerHTML = activeHousePeople
     .map(single => {
       return `
